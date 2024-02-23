@@ -1,4 +1,5 @@
 const Login = require ('../../Model/logins');
+const { use } = require('../../route/register');
 class HomeController {
     index (req,res) {
         res.json("hel")
@@ -24,7 +25,7 @@ class HomeController {
           res.cookie('userId',1234)
           console.log('thanh cong');
           users.result = 'successfully';
-          res.json({result:"successfully", cookie: users.id});
+          res.json({result:"successfully", cookie: users.id, name:users.name});
           return;
         }
         })
