@@ -6,3 +6,5 @@ route.post('/',registerController.handleRegister)
 
 module.exports = route
 
+
+

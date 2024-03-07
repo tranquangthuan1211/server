@@ -5,6 +5,7 @@ const port = 3000;
 const db = require('./config/db');
 const cors = require('cors')
 const route = require('./route/index')
+const methodOverride = require('method-override')
 app.use(morgan('combined'));
 app.use(express.urlencoded());
 app.use(express.json())
